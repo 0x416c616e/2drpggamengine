@@ -1,0 +1,163 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww14660\viewh9940\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Current HP\
+Base Max HP\
+Total Max HP = \
+Current MP\
+Base Max MP\
+Total Max HP = \
+Current XP\
+Next Level XP\
+Level\
+Base Strength\
+Base Physical Defense\
+Base Magical Defense\
+Total Strength = player.getBaseStrength() + player.getWeaponStrength() + player.getArmorStrength();\
+Total Physical Defense = player.getBaseDefense() + player.getArmorDefense() + player.getWeaponDefense;\
+Total Magical Defense\
+Base HP regen\
+Total HP regen\
+Base MP regen\
+Total MP regen\
+Base attacks per turn\
+Total Attacks per turn (basic: 1)\
+Daggers have 2 attacks per turn because they\'92re faster, but they have lower stats\
+Off-hand weapons add attacks per turn\
+\
+\
+Maybe call \'93attack per turn\'94 speed instead? \
+\
+Items:\
+Main Weapon\
+Off-hand\
+Armor\
+\
+Each item type is a class\
+\
+When you level up, your HP is made normal again\
+\
+Current arrow and spacebar stuff should have !inCombat\
+\
+Then add keyCode stuff for if (inCombat && key press stuff) \
+\
+Space bar + direction stuff for an encounter -> overlay a 1280x720 image, then add the combat interface elements\
+\
+Player class extends Alive class\
+\
+Enemy class extends Alive class\
+\
+Classes for enemies\
+\
+\
+\
+\
+Types of enemies:\
+Skeleton (physical)\
+Goblin (physical)\
+Witch (magic)\
+Boss (magic)\
+Snake (physical)\
+Warrior (physical)\
+\
+Use GIFs and boiler animation for most things to make it more interesting (instead of everything being static)\
+\
+\
+Types of tiles/obstacles:\
+enemySkeleton\
+enemyGoblin\
+enemyWitch\
+enemyBoss\
+enemySnake\
+enemyWarrior\
+\
+Types of impassable obstacles:\
+Wall\
+Tree\
+Rocks\
+Enemies\
+Treasure chest\
+\
+Types of passable tiles:\
+Grass\
+Blank\
+\
+\
+Event things:\
+Door (first it\'92s not possible to pass through it, but then you hit space bar to open it)\
+If it\'92s passable, and you hit space bar again, you can close it, which makes it impassable again\
+Enemies\
+Treasure chest\
+\
+\
+IDEA: multi-part bigger obstacle terrain (such as a castle or a mountain or something) instead of only single-tile things\
+\
+Just 1v1 combat for the time being\
+\
+\
+Use PrintWriter or whatever for reading from text file\
+During turn, you are given a random question about information security\
+\
+\
+Press I for inventory, then you can equip stuff or use potions\
+\
+\
+\
+Interface to display HP and MP\
+No regen when walking, only in combat\
+\
+\
+At the end of the fight, you get XP\
+\
+Only treasure chests give items\
+\
+Weapons:\
+Short Sword (starting, bad, +strength)\
+Spiked shield (low attack but high defense despite being weapon)\
+Quick Dagger (+2 attacks per turn, low damage +strength)\
+Heavy Dagger (+1 attack per turn and higher +strength)\
+Long sword (highest +strength in game)\
+\
+Armor:\
+Leather Armor (starting, +physical defense, +magic defense (slight_)\
+Tank Armor (+physical defense, +HP)\
+Dragonscale armor (+magic defense, +physical defense (higher than leather))\
+Enchanted robes (+magic def, +MP, +)\
+Spiky armor (low +physical def, low +magical def, +strength, -HP regen, -max HP, +1 attack per turn)\
+\
+Off-hand:\
+Wooden shield (starting, bad, +defense)\
+Magic book (+magic defense, +MP regen, +max MP)\
+Tower shield (+physical defense, +max HP, +HP regen)\
+Off-hand dagger (+1 attack per turn, +strength)\
+Dragonscale shield (moderate +magic defense, moderate +physical defense)\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Debug mode weapon (+9999999 all stats)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+Later:\
+Character portrait in inventory menu changes based on the items you have equipped\
+\
+Use JSON for the questions?\
+\
+Question:\'94What is 2+2?\'94, a:\'94hotdogs\'94, b:\'944\'94, c:\'94whatever\'94, d:\'9422 (string concatenation)\'94, correct:\'94b\'94\
+\
+\
+Abilities unlocked at level ups:\
+Smite: attack the opponent\'92s MP instead of HP (low damage)\
+Heavy attack \'97 does 200% normal damage, but costs a lot of MP\
+Buff \'97 buffs strength and defense for the duration of the fight\
+Silence \'97 prevent opponent from using an ability next turn\
+Block \'97 prevent damage next turn, deals no damage\
+\
+\
+Stat effectiveness should increase logarithmically so as to make it so the player can\'92t just one-shot everything\
+Level XP requirements increase exponentially \
+\
+}
