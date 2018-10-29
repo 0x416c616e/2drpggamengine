@@ -2,9 +2,9 @@
 
 ![screenshot](https://saintlouissoftware.com/images/game_engine_screenshot_2.png)
 
-![video1](https://saintlouissoftware.com/videos/level_editor.mp4)
+[video1](https://saintlouissoftware.com/videos/level_editor.mp4)
 
-![video2](https://saintlouissoftware.com/videos/level_editor2.mp4)
+[video2](https://saintlouissoftware.com/videos/level_editor2.mp4)
 
 ## Oh no
 
@@ -20,6 +20,6 @@ But the basic idea is that it's a 2D grid-based RPG. So far, I have implemented 
 
 More information is available on my website:
 
-![Level Editor](https://saintlouissoftware.com/level_editor.html)
+[Level Editor](https://saintlouissoftware.com/level_editor.html)
 
-![2D Game Engine](https://saintlouissoftware.com/game_engine.html)
+[2D Game Engine](https://saintlouissoftware.com/game_engine.html)
