@@ -8,4 +8,8 @@
 
 ## Update
 
-This old/unfinished project is abandoned. Check out the new version here: [https://github.com/0x416c616e/2d_game_redo](https://github.com/0x416c616e/2d_game_redo)
+This old/unfinished project is abandoned. 
+
+Check out the new version here: 
+
+[https://github.com/0x416c616e/2d_game_redo](https://github.com/0x416c616e/2d_game_redo)
